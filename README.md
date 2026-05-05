@@ -1,7 +1,7 @@
 # C-3PO Head Controller for Espruino
 
 This project controls a C-3PO head model with an Espruino board. It features:
-- Randomly plays sound clips from an SD card using a DFPlayer Mini module.
+- Randomly plays hardcoded sound clips from an SD card using a DFPlayer Mini module.
 - Detects head orientation (UP/DOWN) via an accelerometer.
 - Detects shaking via a vibration sensor.
 - Controls LEDs (eyes and a red "terminator" LED) with random blinking and brightness changes.
@@ -16,7 +16,7 @@ This project controls a C-3PO head model with an Espruino board. It features:
 - Speaker
 
 ## Pin Connections
-Adjust the pin definitions in `main.js` according to your wiring.
+Adjust the pin definitions in `main.js` according to your wiring. Example (for ISKRA js board):
 
 | Component       | Pin  |
 |-----------------|------|
@@ -48,5 +48,5 @@ The rest of the code is provided under the MIT license (see LICENSE file).
 3. The head will play random sounds at intervals and react to movements.
 
 ## Easter Eggs
-- After two repeated shakes, a special Easter egg track (21-25) is played.
-- Track 21 activates "Terminator mode" (red LED on, eyes off) until the track finishes.
+- After two repeated shakes, a special Easter egg track (#21-25) is played.
+- Track #21 activates "Terminator mode" (red LED on, eyes off) until the track finishes.
